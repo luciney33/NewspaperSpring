@@ -9,7 +9,7 @@ import java.util.List;
 @Component
 public class MapReadActDtoEntity {
     public ReadActivityDTO entityToDto(ReadActivityEntity entity) {
-        return new ReadActivityDTO(entity.getId(), entity.getIdArticle(),entity.getNameReader(), entity.getFechanac(), entity.getSubscriptionsReader(), entity.getRating());
+        return new ReadActivityDTO(entity.getId(), entity.getIdArticle(),entity.getNameReader(), entity.getDobReader(), entity.getSubscriptionsReader(), entity.getRating());
     }
     public List<ReadActivityDTO> entityListToDtoList(List<ReadActivityEntity> entities) {
         List<ReadActivityDTO> dtos = new ArrayList<>();
@@ -19,7 +19,7 @@ public class MapReadActDtoEntity {
         return dtos;
     }
     public ReadActivityEntity dtoToEntity(ReadActivityDTO dto) {
-        return new ReadActivityEntity(dto.getIdReader(), dto.getIdArticle(), dto.getNameReader(), dto.getFechanac(), dto.getSubscriptionsReader(), dto.getRating());
+        return new ReadActivityEntity(dto.getIdReader(), dto.getIdArticle(), dto.getNameReader(), dto.getDobReader(), dto.getSubscriptionsReader(), dto.getRating());
     }
 
 }

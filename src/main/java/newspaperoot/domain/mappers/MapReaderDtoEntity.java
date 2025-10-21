@@ -8,7 +8,7 @@ import java.util.List;
 @Component
 public class MapReaderDtoEntity {
     public ReaderDTO entityToDto(ReaderEntity entity) {
-        return new ReaderDTO(entity.getId(), entity.getName(),entity.getBirthday());
+        return new ReaderDTO(entity.getId(), entity.getName(),entity.getDobReader());
     }
     public List<ReaderDTO> entityListToDtoList(List<ReaderEntity> entities) {
         List<ReaderDTO> dtos = new ArrayList<>();
@@ -19,6 +19,6 @@ public class MapReaderDtoEntity {
     }
 
     public ReaderEntity dtoToEntity(ReaderDTO readerDTO) {
-        return new ReaderEntity(readerDTO.getId(), readerDTO.getName(), readerDTO.getBirthday());
+        return new ReaderEntity(readerDTO.getId(), readerDTO.getName(), readerDTO.getDobReader());
     }
 }

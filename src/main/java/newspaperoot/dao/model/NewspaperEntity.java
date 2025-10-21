@@ -9,5 +9,4 @@ import java.time.LocalDate;
 public class NewspaperEntity {
     private int id;
     private String name;
-    private LocalDate date;
 }

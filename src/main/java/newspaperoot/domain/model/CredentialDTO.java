@@ -8,5 +8,4 @@ import lombok.Data;
 public class CredentialDTO {
     private String username;
     private String password;
-    private int id_reader;
 }

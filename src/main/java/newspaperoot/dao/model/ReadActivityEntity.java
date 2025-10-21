@@ -9,10 +9,10 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ReadActivityEntity {
-    private int id;
     private int idArticle;
+    private int id;
     private String nameReader;
-    private LocalDate fechanac;
+    private LocalDate dobReader;
     private List<String> subscriptionsReader;
     private int rating;
 

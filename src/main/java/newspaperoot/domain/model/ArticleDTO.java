@@ -8,7 +8,7 @@ import lombok.Data;
 public class ArticleDTO {
     private int id;
     private String name;
-    private int nPaperId;
-    private TypeDTO type;
-
+    private TypeDTO typeUI;
+    private int npaperId;
+    private double avgRating;
 }

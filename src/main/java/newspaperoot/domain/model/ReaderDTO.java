@@ -9,5 +9,6 @@ import java.time.LocalDate;
 public class ReaderDTO {
     private int id;
     private String name;
-    private LocalDate birthday;
+    private LocalDate dobReader;
 }
+

@@ -1,7 +1,8 @@
-package newspaperoot.common;
+package newspaperoot.dao.utilities;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import newspaperoot.common.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;

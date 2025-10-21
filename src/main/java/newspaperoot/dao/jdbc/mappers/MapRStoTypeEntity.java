@@ -8,6 +8,6 @@ import java.sql.SQLException;
 @Component
 public class MapRStoTypeEntity {
     public TypeEntity mapRS(ResultSet rs) throws SQLException {
-        return new TypeEntity(rs.getInt("id_type"), rs.getString("name"), rs.getString("description"));
+        return new TypeEntity(rs.getInt("id_type"), rs.getString("name"));
     }
 }

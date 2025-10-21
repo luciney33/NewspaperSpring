@@ -14,18 +14,19 @@ public class MapArticleDtoEntity {
         return new ArticleEntity(
                 dto.getId(),
                 dto.getName(),
-                dto.getNPaperId(),
-        new TypeEntity(dto.getType().getId(), dto.getType().getName(), dto.getType().getDescription())
-        );
+        new TypeEntity(dto.getTypeUI().getId(), dto.getTypeUI().getName()),
+                dto.getNpaperId()
+                );
     }
 
     public ArticleDTO entityToDto(ArticleEntity entity) {
         return new ArticleDTO(
                 entity.getId(),
                 entity.getName(),
+                new TypeDTO(entity.getType().getId(), entity.getType().getName()),
                 entity.getNPaperId(),
-                new TypeDTO(entity.getType().getId(), entity.getType().getName(), entity.getType().getDescription())
-        );
+                0
+                );
     }
 
     public List<ArticleDTO> entityToDtoList(List<ArticleEntity> entities) {

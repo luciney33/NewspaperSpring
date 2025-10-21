@@ -1,5 +1,5 @@
 package newspaperoot.dao.jdbc;
-import newspaperoot.common.DBconnectionPool;
+import newspaperoot.dao.utilities.DBconnectionPool;
 import newspaperoot.dao.ReaderRepository;
 import newspaperoot.dao.jdbc.mappers.MapRStoReaderEntity;
 import newspaperoot.dao.model.CredentialEntity;
@@ -72,7 +72,7 @@ public class JdbcReaderRepository implements ReaderRepository {
 
                 psReader.setInt(1, reader.getId());
                 psReader.setString(2, reader.getName());
-                psReader.setDate(3, Date.valueOf(reader.getBirthday()));
+                psReader.setDate(3, Date.valueOf(reader.getDobReader()));
                 psReader.executeUpdate();
 
                 if (confirmation) {

@@ -8,10 +8,10 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ReadActivityDTO {
-    private int idReader;
     private int idArticle;
+    private int idReader;
     private String nameReader;
-    private LocalDate fechanac;
+    private LocalDate dobReader;
     private List<String> subscriptionsReader;
     private int rating;
 }

@@ -1,7 +1,7 @@
 package newspaperoot.dao.jdbc;
 
 import lombok.Data;
-import newspaperoot.common.DBconnectionPool;
+import newspaperoot.dao.utilities.DBconnectionPool;
 import newspaperoot.dao.ArticleRepository;
 import newspaperoot.dao.jdbc.mappers.MapRStoArticleEntity;
 import newspaperoot.dao.model.ArticleEntity;

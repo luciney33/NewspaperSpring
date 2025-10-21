@@ -13,9 +13,9 @@ public class MapRStoArticleEntity {
         return new ArticleEntity(
                 rs.getInt("id_article"),
                 rs.getString("name_article"),
-                rs.getInt("id_newspaper"),
-        new TypeEntity(rs.getInt("id_type"), rs.getString("name"), rs.getString("description"))
-        );
+            new TypeEntity(rs.getInt("id_type"), rs.getString("name")),
+                rs.getInt("id_newspaper")
+                );
     }
 
 }

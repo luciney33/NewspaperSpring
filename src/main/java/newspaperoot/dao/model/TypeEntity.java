@@ -8,6 +8,5 @@ import lombok.Data;
 public class TypeEntity {
     private int id;
     private String name;
-    private String description;
 
 }

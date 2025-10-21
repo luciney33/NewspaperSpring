@@ -1,7 +1,7 @@
 package newspaperoot.dao.jdbc;
 
 import lombok.Data;
-import newspaperoot.common.DBconnectionPool;
+import newspaperoot.dao.utilities.DBconnectionPool;
 import newspaperoot.dao.CredentialRepository;
 import newspaperoot.dao.jdbc.mappers.MapRStoCredentialEntity;
 import newspaperoot.dao.model.CredentialEntity;

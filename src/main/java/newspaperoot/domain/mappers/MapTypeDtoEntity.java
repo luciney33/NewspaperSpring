@@ -9,7 +9,7 @@ import java.util.List;
 @Component
 public class MapTypeDtoEntity {
     public TypeDTO entityToDto(TypeEntity entity) {
-        return new TypeDTO(entity.getId(), entity.getName(), entity.getDescription());
+        return new TypeDTO(entity.getId(), entity.getName());
     }
     public List<TypeDTO> entityToDtoList(List<TypeEntity> entities){
         List<TypeDTO> dtos = new ArrayList<TypeDTO>();
