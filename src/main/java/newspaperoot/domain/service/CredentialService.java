@@ -21,5 +21,6 @@ public class CredentialService {
     public boolean checkLogin(CredentialDTO credentialDTO) {
         CredentialEntity credentialEntity = credentialRepository.get(credentialDTO.getUsername());
         return credentialEntity.getPassword().equals(credentialDTO.getPassword());
+
     }
 }
